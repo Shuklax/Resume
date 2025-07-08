@@ -1,0 +1,108 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontawesome5}
+
+
+% Custom section command
+\titleformat{\section}
+  {\large\bfseries\uppercase}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{*1.5}{*0.5}
+
+% Remove page numbers
+\pagenumbering{gobble}
+
+% Custom commands
+\newcommand{\name}[1]{
+  \begin{center}
+    \Huge\textbf{\href{https://rb.gy/qco3w0}{#1}}
+  \end{center}
+  
+}
+\newcommand{\contact}[3]{
+  \begin{center}
+    #1 \\
+    #2 \\
+    #3
+  \end{center}
+  % \vspace{-0.5em}
+  % \hrule height 0.4pt width \textwidth
+  \vspace{0.5em}
+}
+\newcommand{\role}[4]{
+  \begin{center}
+  \textbf{#1} \hfill \textbf{#2} \\
+  \textit{#3} \hfill \textit{#4}
+}
+
+\begin{document}
+
+\name{Harsh Shukla}
+\contact{+(91) 9839182940 | India | Shuklax@proton.me | \href{https://www.linkedin.com/in/shuklax/}{\faLinkedin\hspace{0.5em} Shuklax} | \href{https://github.com/Shuklax}{\faGithub\hspace{0.5em} Shuklax}}
+
+
+\section{PROFESSIONAL EXPERIENCE}
+
+\vspace{1em}
+\role{BillionByte Technologies}{Mumbai, India}{Software Developer(Hybrid)}{June 2023--Present}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Spearheaded and maintained production-grade codebases across multiple client and internal projects, delivering features end-to-end in a high-velocity, service-to-product transition environment.
+  \item Independently architected and deployed secure, scalable authentication flows using Node.js, JWT, and custom middleware, reducing auth-related incidents by 30\% and cutting onboarding friction.
+  \item Engineered the backend of a real-time trading system with Node.js, Express, Redis (Pub/Sub), and WebSockets, capable of handling thousands of events per second with high reliability.
+  \item Leveraged advanced TypeScript patterns and clean MVC architecture to build modular backend services—boosting maintainability and reducing technical debt by over 40\% across teams.
+  \item Implemented streaming APIs and experimented with live video data processing, exploring serverless compute and event-driven architecture with message queues and Kubernetes integration.
+  \item Worked extensively with SQL and NoSQL databases, Docker (multi-container orchestration with volumes and networks), and deployed services using AWS EC2, S3 buckets, and GitHub Actions.
+  \item Mentored and onboarded new interns by breaking down complex systems into approachable components, creating documentation and walkthroughs that helped them become productive contributors within their first week.
+\end{itemize}
+
+\role{KnowledgeGATE Eduventures}{Gaziabad, India}{Mentor and Network Security Faculty}{March 2022--Jan 2023}
+\begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+  \item Taught Network Security fundamentals and hands-on modules as a subject faculty, simplifying complex topics for undergraduate and early-career engineers.
+  \item Received a personal recommendation from the COO for excellence in teaching, impact-driven mentorship, and consistent learner engagement.
+\end{itemize}
+  
+\end{itemize}
+
+\vspace{1em}
+\section{OPEN-SOURCE}
+
+\vspace{1em}
+\role{humanize-this}{\href{https://github.com/Shuklax/humanize-this}{Github}, \href{https://www.npmjs.com/package/humanize-this}{NPM}}{}{}
+\begin{itemize}[leftmargin=*,nosep]
+  \item A lightweight yet powerful utility package designed to convert raw, machine-readable data into clean, human-friendly formats—optimized for real-world applications at scale. 
+  \item Born out of the recurring friction experienced while working on production-grade codebases, humanize-this emerged as a modular, zero-dependency solution that simplifies the complexity of formatting numbers, time, currencies, file sizes, and text—all with full TypeScript support.
+  \item 40+ stars on GitHub
+\end{itemize}
+
+% \role{PrimeGPT}{\href{https://github.com/Shuklax/PrimeGPT}{Github}}{}{}
+% \begin{itemize}[leftmargin=*,nosep,topsep=0pt]
+%   \item A hybrid movie platform with AI based movie recommendation system built using OpenAI API and TMDB.
+%   \item Implemented Auth flow using Google Firebase, Redux toolkit for maintaining the store, Tailwind for styling resulting in a picture perfect UI/UX.
+% \end{itemize}
+
+
+\vspace{1em}
+\section{EDUCATION}
+
+\vspace{0.5em}
+\role{DIT University}{Dehradun, India}{B.Tech in Computer Science (Specialization in Cyber Security and forensics)}{May 2021}
+
+\vspace{1em}
+\section{SKILLS}
+
+\vspace{0.5em}
+\begin{itemize}[leftmargin=*,nosep]
+  \item \textbf{Languages:}  TypeScript, JavaScript, Java, HTML5, CSS3
+  \item \textbf{Frontend:} React.js, Vite, Parcel, Tailwind CSS, Shadcn UI, Zod, Global State Management
+  \item \textbf{Backend:} Node.js, Express.js, Docker (Containers, Networks, Volumes), Redis (Pub/Sub), WebSockets, Prisma, Mongoose, Firebase
+  \item \textbf{DevOps & Infra} AWS (EC2, S3), GitHub Actions, Serverless Functions, Light Kubernetes, Message Queues
+\end{itemize}
+
+\end{document}
